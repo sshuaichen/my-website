@@ -1,23 +1,8 @@
 <!doctype html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="我的網站，正在慢慢成形。">
-    <title>我的網站</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="./index.html">我的網站<span aria-hidden="true">.</span></a>
-      <span class="status">準備中</span>
-    </header>
-    <main>
-      <p class="eyebrow">HELLO, WORLD</p>
-      <h1>從這裡，<br>開始一點新東西。</h1>
-      <p class="intro">這是我的小小網站。<br>內容正在慢慢成形，敬請期待。</p>
-      <div class="placeholder"><span aria-hidden="true">＋</span><p>為下一個想法，留一點空間。</p></div>
-    </main>
-    <footer>我的網站 <span>慢慢來，也很好。</span></footer>
-  </body>
-</html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="曼谷咖啡散步：依評分、手沖、環境與街區找到下一杯咖啡，附資料來源與 Google 地圖。"><title>曼谷咖啡散步 · Bangkok Coffee Notes</title><link rel="stylesheet" href="./style.css"><script src="./cafes.js" defer></script><script src="./app.js" defer></script></head>
+<body><header><a class="brand" href="./">☕ COFFEE NOTES <span>BANGKOK</span></a><a href="#explore">探索咖啡廳 ↗</a></header><main>
+<section class="hero"><div><p class="eyebrow">A LITTLE COFFEE, A LITTLE BANGKOK.</p><h1>在曼谷，<br>留一點時間給<span>咖啡。</span></h1><p class="intro">從巷弄裡的綠意，到認真對待每一杯的手沖吧。<br>挑一個喜歡的角落，開始你的咖啡散步。</p><a class="primary" href="#explore">找下一杯咖啡 ↓</a></div><div class="coffee-art" aria-hidden="true"><span class="art-label">BANGKOK<br>COFFEE FIELD NOTES</span><div class="saucer"><div class="cup"><div class="coffee"></div></div></div><span class="art-bottom">慢一點，喝一杯。 / TAKE A BREAK</span></div></section>
+<section id="explore" aria-labelledby="explore-title"><div class="section-heading"><div><p class="eyebrow">YOUR NEXT COFFEE STOP</p><h2 id="explore-title">今天想去哪一間？</h2></div><span class="updated">資料查閱 · 2026.09.19</span></div>
+<div class="filters"><div class="fields"><label class="search-label">搜尋店家或特色<input id="search" type="search" placeholder="例如：Roots、手沖、花園" autocomplete="off"></label><label>街區<select id="area"><option value="">所有街區</option></select></label><label>排序<select id="sort"><option value="rating">評分由高到低</option><option value="reviews">評論數由多到少</option><option value="name">店名 A–Z</option></select></label></div><div id="tags" class="filter-tags" role="group" aria-label="特色篩選，可複選"></div><div class="filter-bottom"><span>多選標籤＝同時符合所有條件</span><button id="reset" class="text-button" type="button">清除篩選</button></div></div>
+<p id="result-count" role="status" aria-live="polite"></p><div class="explorer"><div><div id="cards" class="cards"></div><div id="empty" class="empty" hidden><h3>還沒有符合的咖啡廳</h3><p>試著減少標籤，或清除搜尋條件。</p><button id="empty-reset" type="button">顯示所有店家</button></div></div><aside id="map-panel" aria-labelledby="map-title"><div class="map-heading"><span class="eyebrow">ON THE MAP</span><h2 id="map-title">選一間咖啡廳</h2><p id="map-address"></p></div><iframe id="map" title="所選咖啡廳的 Google 地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><div class="map-footer"><a id="map-link" class="primary" target="_blank" rel="noopener noreferrer">在 Google Maps 開啟 ↗</a><p>地圖一次顯示一間店。若未載入，請用上方連結開啟。</p></div></aside></div></section>
+<section class="method"><h2>關於這份咖啡筆記</h2><p>先收錄 4 間來源評分達 4.5 的咖啡廳，另加 3 間有空間特色的 4.4 分備選。預設只顯示「評分高」，清除篩選即可看全部。</p><p>評分與評論數是公開第三方頁面轉載的 Google 資料快照，並非即時 Google Maps 資料。「評分高」為至少 4.5 / 5；「評論多」為至少 1,000 則。每間店都附來源。</p><p>「環境好」「手沖推薦」等標籤依報導或評論整理，屬主觀分類。營業時間、菜單及評分可能變動，出發前請再查看 Google Maps。</p></section><noscript><p>請啟用 JavaScript 使用咖啡廳清單與篩選，或到 <a href="https://www.google.com/maps/search/Bangkok+coffee+shops/">Google Maps 搜尋曼谷咖啡廳</a>。</p></noscript></main><footer><span>COFFEE NOTES · 曼谷咖啡散步</span><span>一間一間，慢慢探索。</span></footer></body></html>

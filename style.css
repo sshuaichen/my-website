@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft JhengHei", sans-serif;
+  color: #263c32;
+  background: #f7f7f0;
+}
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 1120px; padding: 0 40px; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 32px 0; }
+.brand { color: inherit; font-size: 21px; font-weight: 750; text-decoration: none; }
+.brand span { color: #54764c; }
+.brand:focus-visible { outline: 2px solid #54764c; outline-offset: 6px; }
+.status { padding: 7px 14px; border: 1px solid #d2dacb; border-radius: 100px; font-size: 12px; }
+main { padding: 85px 0 70px; }
+.eyebrow { font-size: 12px; letter-spacing: .22em; color: #59734d; }
+h1 { margin: 24px 0; font-size: clamp(36px, 6vw, 70px); font-weight: 650; line-height: 1.3; letter-spacing: -.035em; }
+.intro { color: #626d60; font-size: 17px; line-height: 1.9; }
+.placeholder { margin-top: 60px; min-height: 150px; border: 1px dashed #abb8a3; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #626d60; }
+.placeholder > span { font-size: 28px; }
+.placeholder p { margin: 8px 16px; font-size: 14px; text-align: center; }
+footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #dce1d5; padding: 24px 0; font-size: 12px; color: #626d60; }
+@media (max-width: 600px) {
+  body { padding: 0 24px; }
+  main { padding: 55px 0; }
+}
